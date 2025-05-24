@@ -1,0 +1,47 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# Poetry
+poetry.lock
+
+# Environment variables
+.env
+
+# IDE files
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+.history/
+
+# Pulumi files
+.pulumi/
+
+# AWS credentials
+.aws/
+
+# Test coverage
+htmlcov/
+.coverage
+coverage.xml
+
+# Log files
+*.log
+
+# Local development
+.DS_Store

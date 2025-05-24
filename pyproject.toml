@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "aws-video-cdn"
+version = "0.1.0"
+description = "Video hosting service with AWS S3 and CloudFront CDN"
+authors = ["User"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.110.0"
+uvicorn = {extras = ["standard"], version = "^0.27.0"}
+python-multipart = "^0.0.9"
+boto3 = "^1.34.0"
+pulumi = "^3.110.0"
+pulumi-aws = "^6.30.0"
+pydantic = "^2.7.0"
+pydantic-settings = "^2.2.1"
+python-dotenv = "^1.0.1"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.1.0"
+isort = "^5.13.0"
+flake8 = "^7.0.0"
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

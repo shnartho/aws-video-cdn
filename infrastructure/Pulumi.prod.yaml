@@ -1,0 +1,4 @@
+config:
+  aws:region: eu-west-1
+  aws-video-cdn:environment: prod
+  aws-video-cdn:s3_bucket_name: video-storage-bucket-prod

@@ -1,0 +1,51 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Run FastAPI Application",
+            "type": "shell",
+            "command": "poetry run python run.py",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "always",
+                "panel": "new",
+                "focus": true
+            }
+        },
+        {
+            "label": "Run Tests",
+            "type": "shell",
+            "command": "poetry run pytest",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Pulumi Deploy",
+            "type": "shell",
+            "command": "cd infrastructure && pulumi up",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Format Code",
+            "type": "shell",
+            "command": "poetry run black . && poetry run isort .",
+            "group": "build",
+            "problemMatcher": []
+        },
+        {
+            "label": "Lint Code",
+            "type": "shell",
+            "command": "poetry run flake8 .",
+            "group": "build",
+            "problemMatcher": []
+        }
+    ]
+}
