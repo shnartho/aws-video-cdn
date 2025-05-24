@@ -43,11 +43,11 @@ Tests conducted between our AWS infrastructure in Ireland and a client in Austra
 
 ![S3 Speed Test](docs/screenshots/s3speed.png)
 
-### CloudFront CDN Speed (3x faster):
+### CloudFront CDN Speed (2x faster):
 
 ![CloudFront Speed Test](docs/screenshots/cfspeed.png)
 
-As shown in the speed tests, CloudFront provides approximately 3x better performance, making it ideal for global video content delivery.
+CloudFront significantly improves performance over S3, as shown by lower total, resolve, connection, and download times. In Auckland, CloudFront's total time was 2437 ms (32 ms resolve, 127 ms connection, 2278 ms download) compared to S3's 4516 ms (63 ms resolve, 280 ms connection, 4173 ms download). Similarly, for Sydney, CloudFront achieved 2490 ms total (9 ms resolve, 155 ms connection, 2326 ms download), which is much faster than S3's 5319 ms total (23 ms resolve, 327 ms connection, 4969 ms download). The data clearly demonstrates CloudFront's efficacy in reducing all aspects of content delivery latency.
 
 ## License
 
